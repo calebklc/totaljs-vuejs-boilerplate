@@ -7,12 +7,17 @@ Using Vue components in Total.js' views
 * Vue.js 2.x.x
 
 ## Installation
-1. Install totaljs globally because the build.js will be minified using Total.js minify command
+1. Clone this repository
+```bash
+git clone https://github.com/KwanLamC/totaljs-vuejs-boilerplate.git
+```
+
+2. Install totaljs globally because the build.js will be minified using Total.js minify command
 ```bash
 npm install -g total.js
 ```
 
-2. Install dependencies
+3. Install dependencies
 ```bash
 npm install
 # or
