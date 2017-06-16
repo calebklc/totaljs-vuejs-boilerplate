@@ -1,0 +1,23 @@
+{
+  "name": "totaljs-vuejs-boilerplate",
+  "description": "Total.js with Vue.js components boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "client:dev": "./node_modules/webpack/bin/webpack.js --watch --progress --hide-modules",
+    "client:prod": "./node_modules/webpack/bin/webpack.js --progress --hide-modules && npm run prod:minify && npm run prod:rename",
+    "prod:minify": "totaljs --minify ./public/js/build.js",
+    "prod:rename": "mv ./public/js/build.min.js ./public/js/build.js"
+  },
+  "dependencies": {
+    "total.js": "^2.6.2",
+    "vue": "^2.3.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1"
+  }
+}
